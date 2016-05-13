@@ -14,6 +14,8 @@ iApplicationServer (iAS) is an open source cloud platform for iOT applications. 
 application in iOT App Server. For create a Fire alarm system
 user can use a device type such as Raspberry Pi, Arduino or Uno, and Thermistor sensor and enroll the Fire Alarm application in the iAS system. 
 
+[Youtube video](https://youtu.be/xC1frlqNXfk)
+
 <hr>
 
 #### Team - iAS, Faculty of Engineering, University Of Peradeniya 
