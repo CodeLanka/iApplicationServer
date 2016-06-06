@@ -25,9 +25,11 @@ api.add_resource(Main, '/')
 api.add_resource(Applications, '/applications')
 api.add_resource(Application_Render, '/applications/<id>')
 api.add_resource(EnrolledApps, '/enrolledapps')
-api.add_resource(Enrolled_App_Render, '/enrolledapps/<id>')
+api.add_resource(Render_Sample_App_Page, '/enrolledapps/<id>')
+api.add_resource(Sample_App_Set_Status, '/enrolled_apps/sample_app/<status>')
 api.add_resource(TemperatureGen, '/enrolledapps/ajax/getdata')
-api.add_resource(messageHandler, '/sendMessage')
+# api.add_resource(messageHandler, '/sendMessage')
+
 
 api.add_resource(Login, '/login')
 

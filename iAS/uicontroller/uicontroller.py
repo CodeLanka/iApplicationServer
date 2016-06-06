@@ -86,7 +86,7 @@ class EnrolledApps(Resource):
             profilePicture = session['User']['profilePicture']
             dao = DeviceDAO()
             deviceList = dao.getDevices(username)
-            print(deviceList)
+
             return make_response(
                 render_template('apps/enrolledapps.html',
                                 username=username,
@@ -108,9 +108,9 @@ class Enrolled_App_Render(Resource):
             profilePicture = session['User']['profilePicture']
 
             return make_response(
-                render_template('apps/fireAlarmSystem/enrolleddashboard.html',
-                                username=username,
-                                profilePicture=profilePicture
+                render_template('apps/sample_app/sample_app.html',
+                                username = username,
+                                profilePicture = profilePicture
                                 ),
                 200, headers
             )

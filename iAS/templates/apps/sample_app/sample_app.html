@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Sample App - LED ON/OFF</h1>
+    <h3>Status : <span id="led_status">off</span></h3>
+    <br />
+    <button id="led_on" class="btn btn-primary">on</button>
+    <button id="led_off" class="btn btn-danger">off</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#led_on').click(function(){
+                console.log('led_on');
+                $('#led_status').text('on');
+                send_status('on')
+            });
+
+            $('#led_off').click(function(){
+                console.log('led_off');
+                $('#led_status').text('off');
+                send_status('off');
+            });
+        });
+
+        function send_status(status){
+            $.ajax({
+                url:'/enrolled_apps/sample_app/'+status
+            })
+        }
+
+    </script>
+
+{% endblock %}
