@@ -5,18 +5,30 @@
     <h3>Your Enrolled Devices</h3><hr>
 
     <div class="app-div-lg col-md-3">
-        <div class="col-md-12 app-div">
-            <h3>Sample App</h3>
-            <div style="height: 150px;"><img class="img-responsive" src="{{ url_for('static', filename='images/fire.jpg') }}">
-            <a style="margin-top: 20px" href="/enrolledapps/1" class="btn btn-sm btn-primary pull-right">Dash Board</a></div>
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Sample Application</h3>
+            </div>
+            <div class="box-body" style="height: 150px">
+                <img class="img-responsive" src="{{ url_for('static', filename='images/fire.jpg') }}" style="height: 140px" ">
+            </div>
+            <div class="box-footer">
+                <a href="/enrolledapps/1" class="btn btn-sm btn-default pull-right">Dashboard</a>
+            </div>
         </div>
     </div>
 
     <div class="app-div-lg col-md-3">
-        <div class="col-md-12 app-div">
-            <h3>Fire Alarm App</h3>
-            <div style="height: 150px;"><img class="img-responsive" src="{{ url_for('static', filename='images/fire.jpg') }}">
-            <a style="margin-top: 20px" href="/enrolledapps/2" class="btn btn-sm btn-primary pull-right">Dash Board</a></div>
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Fire Alarm</h3>
+            </div>
+            <div class="box-body" style="height: 150px">
+                <img class="img-responsive" src="{{ url_for('static', filename='images/fire.jpg') }}" style="height: 140px" ">
+            </div>
+            <div class="box-footer">
+                <a href="/enrolledapps/2" class="btn btn-sm btn-default pull-right">Dashboard</a>
+            </div>
         </div>
     </div>
 
