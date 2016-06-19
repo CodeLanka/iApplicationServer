@@ -151,10 +151,10 @@ footer, .navbar, .nav-side{
 
 /*CSS for Application.HTML*/
 .app-div{
-    border: solid 1px #dbdbdb;
+    border: solid 1px #888888;
     height: 400px;
     border-radius: 5px;
-    background: rgba(200, 182, 255, 0.52);
+    background: #dddddd
 }
 
 .app-div-lg{
@@ -162,7 +162,8 @@ footer, .navbar, .nav-side{
 }
 
 .app-div{
-    box-shadow: #888888 2px 2px 5px;
+    padding: 5px;
+    /*box-shadow: #888888 2px 2px 5px;*/
 }
 
 .app-div img{
