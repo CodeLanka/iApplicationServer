@@ -11,38 +11,113 @@
     <script type="text/javascript" src="{{ url_for('static', filename='jquery/jquery-2.2.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scrollreveal.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fittext.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/creative.js') }}"></script>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar-fixed-side.scss') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/creative.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+     <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+
 </head>
 
 
 <body>
+ <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color:#00438C;height: 50px">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">i Application Server</a>
+            </div>
 
-<div class="content">
-    <!-- Side Navbar -->
-    <div class="col-md-2 nopadding nav-div-side">
-        {% include 'navbar-side.html' %}
-    </div>
-
-    <!-- Content -->
-    <div class="col-md-10 nopadding">
-        <!-- Top Navbar -->
-        {% include 'navbar-top.html' %}
-
-
-        <!-- Content is include in Here -->
-        <div id="content">
-            {% block content %}
-            {% endblock %}
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/login" class="page-scroll"><i class="fa fa-google"></i> Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </div>
-</div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 style="font-size: 70px">i Application Server</h1>
+                <hr>
+                <p>platform is kind of an IOT server and it introduces some device types which can be enrolled to the platform and an application can be used for it</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out Apps</a>
+            </div>
+        </div>
+    </header>
 
-    {% include 'footer.html' %}
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <div class="row">
+                       <div class="col-lg-4">
+                           <i class="fa fa-5x fa-gears text-center"></i>
+                           <h3>Are you a programmer</h3>
+                           <p>If you can create or programme embedded system applications its free to add applications here and earn monny with dialog ideamart.</p>
+                       </div>
+                       <div class="col-lg-4">
+                           <i class="fa fa-5x fa-gears text-center"></i>
+                           <h3>Are you a programmer</h3>
+                           <p>If you can create or programme embedded system applications its free to add applications here and earn monny with dialog ideamart.</p>
+                       </div>
+                       <div class="col-lg-4">
+                           <i class="fa fa-5x fa-gears text-center"></i>
+                           <h3>Are you a programmer</h3>
+                           <p>If you can create or programme embedded system applications its free to add applications here and earn monny with dialog ideamart.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                {% for app in appList %}
+                    <div class="app-div-lg col-md-3">
+                        <div class="col-md-12 app-div">
+                            <h2>{{ app.name }}</h2>
+                            <div style="height: 150px;"><img class="img-responsive" src="{{ url_for('static', filename=''+app.image) }}"></div>
+                            <p>{{ app.description }}</p>
+                            <a href="/applications/{{ app.appid }}" class="btn btn-primary">Enroll Device</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Sign Up and Start HERE</h2>
+                <a href="" class="btn btn-default btn-xl sr-button">Sign Up Now!</a>
+            </div>
+        </div>
+    </aside>
 
 </body>
 </html>
