@@ -16,13 +16,7 @@ user can use a device type such as Raspberry Pi, Arduino or Uno, and Thermistor 
 
 [Youtube video](https://youtu.be/xC1frlqNXfk)
 
-<hr>
 
-#### Team - iAS, Faculty of Engineering, University Of Peradeniya 
-<img style="border-radius:5px" src="https://avatars2.githubusercontent.com/u/9385170?v=3&s=460" width="120px"><br>Tharinda Ehelepola | <img style="border-radius:5px" src="https://avatars0.githubusercontent.com/u/10165411?v=3&s=460" width="120px"><br>Menaka Jayawardhana  | <img style="border-radius:5px" src="https://avatars1.githubusercontent.com/u/9251082?v=3&s=460" width="120px"><br>Irunika Lakmal  | <img style="border-radius:5px" src="https://avatars2.githubusercontent.com/u/9445375?v=3&s=460" width="120px"><br>Dileepa Chandima 
------------- | ------------- | ------------ | -------------
-
-<hr>
 
 ##### Licenses
 
@@ -36,3 +30,12 @@ user can use a device type such as Raspberry Pi, Arduino or Uno, and Thermistor 
 * Jinja framework
 * MQTT protocol
 * mongodb 
+
+
+<hr>
+
+#### Team 
+<img style="border-radius:5px" src="https://avatars2.githubusercontent.com/u/9385170?v=3&s=460" width="120px"><br>Tharinda Ehelepola | <img style="border-radius:5px" src="https://avatars0.githubusercontent.com/u/10165411?v=3&s=460" width="120px"><br>Menaka Jayawardhana  | <img style="border-radius:5px" src="https://avatars1.githubusercontent.com/u/9251082?v=3&s=460" width="120px"><br>Irunika Lakmal  | <img style="border-radius:5px" src="https://avatars2.githubusercontent.com/u/9445375?v=3&s=460" width="120px"><br>Dileepa Chandima 
+------------ | ------------- | ------------ | -------------
+
+<hr>
